@@ -139,14 +139,23 @@ footer p {
 }
 
 @media (max-width: 1300px) {
-    #name {
-    width: 100%;
+    .contact .wrapper {
+    width: 80%;
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
+    #name {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
     #email {
     width: 100%;
+    margin-left: 0;
     }
 }
 

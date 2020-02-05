@@ -421,11 +421,11 @@ h1 {
   transition: 0.5s;
 }
 
-.menu a:hover {
+.menu a:hover, .menu a:focus {
   border-bottom: 3.9px solid #605cce;
 }
 
-.menu .contactTab:hover {
+.menu .contactTab:hover, .menu :focus {
   border: 1.5px solid #605cce;
   background-color: #605cce;
   color: white;
@@ -799,7 +799,7 @@ h1 {
 @media (max-width: 1100px) {
   .projectDesc {
     width: 100%;
-    padding-bottom: 50px;
+    padding: 0 0 50px 0;
   }
 }
 
@@ -890,7 +890,7 @@ h1 {
 
 @media (max-width: 850px) {
   .bottomBanner {
-    min-height: 40vh;
+    min-height: 35vh;
   }
 }
 
@@ -915,15 +915,21 @@ h1 {
 }
 
 @media (max-width: 540px) {
+  .bottomBanner {
+    min-height: 20vh;
+  }
+}
+
+@media (max-width: 540px) {
   .logoBoxBottom {
-    width: 290px;
+    width: 310px;
     height: 80px;
   }
 }
 
 @media (max-width: 540px) {
   .bottomBanner h2 {
-    font-size: 4.3rem;
+    font-size: 4.8rem;
   }
 }
 
@@ -1080,14 +1086,23 @@ footer p {
 }
 
 @media (max-width: 1300px) {
-  #name {
-    width: 100%;
+  .contact .wrapper {
+    width: 80%;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
+  #name {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
   #email {
     width: 100%;
+    margin-left: 0;
   }
 }
 

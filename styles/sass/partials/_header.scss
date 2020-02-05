@@ -107,11 +107,11 @@ h1 {
     transition: 0.5s;
     }
 
-    a:hover {
+    a:hover, a:focus {
     border-bottom: 3.9px solid rgba(96, 92, 206, 1);
     }
 
-    .contactTab:hover {
+    .contactTab:hover, :focus {
     border: 1.5px solid rgba(96, 92, 206, 1);
     background-color: rgba(96, 92, 206, 1);
     color: rgba(255, 255, 255, 1);
