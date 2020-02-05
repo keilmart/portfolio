@@ -14,6 +14,7 @@
 
 .aboutContainer {
     width: 100%;
+    // CHANGE HERE FLEX// 
     display: flex;
     flex-direction: row;
     padding: 100px 0;
@@ -46,6 +47,7 @@
 
 .aboutContent {
     ul {
+            // CHANGE HERE FLEX// 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

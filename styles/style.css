@@ -457,9 +457,9 @@ h1 {
   }
 }
 
-@media (max-width: 850px) {
-  header {
-    min-height: 30vh;
+@media (max-width: 540px) {
+  .headerContent {
+    min-height: 70vh;
   }
 }
 
@@ -488,6 +488,12 @@ h1 {
   .logo3 {
     left: -6px;
     top: 6px;
+  }
+}
+
+@media (max-width: 540px) {
+  menu li {
+    display: none;
   }
 }
 
