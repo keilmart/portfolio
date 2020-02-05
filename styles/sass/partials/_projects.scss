@@ -1,0 +1,125 @@
+// Add focus states, make sure tabing through the site works //
+
+.projects {
+    background: rgba(243, 244, 249, 1);
+    min-height: 100vh;
+}
+
+.projectContainer {
+    padding: 25px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.projectImg {
+    width: 45%;
+}
+
+.projectDesc {
+    width: 55%;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+.projectDesc p {
+    margin: 13px 0 0 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(128, 128, 128, 1);
+}
+
+.projects h2 {
+    text-align: center;
+    position: relative;
+    padding: 70px 0 ;
+}
+
+.projectDesc h3 {
+    text-align: start;
+    position: relative;
+}
+
+.projectImg img {
+    padding-top: 20px;
+}
+
+.codingType {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.projectDesc .button {
+    width: 110px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    padding: 7px 15px;
+    margin: 0 5px;
+    background: rgba(96, 92, 206, 1);
+    box-shadow: 5px 5px 10px -2px rgba(128, 128, 128, 1);
+    transition: all 0.5s ease-in-out;
+}
+
+.projectDesc .button:hover {
+    padding: 8px 18px;
+    box-shadow: 5px 5px 10px -2px rgba(64, 224, 208, 1);
+}
+
+.buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    margin-top: 13px;
+}
+
+@media (max-width: 1100px) {
+    .projectContainer:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1100px) {
+    .projectContainer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1100px) {
+    .projectDesc {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .projectImg {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+}
+
+
+

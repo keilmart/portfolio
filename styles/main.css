@@ -1,0 +1,242 @@
+html {
+  font-size: 125%;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+body {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: pink;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Ceviche One', cursive;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Atomic Age', cursive;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 15px 0;
+}
+
+.banner {
+  position: fixed;
+  height: auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url(./assets/food1.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.text-block-hover {
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 75px 90px;
+  margin: 220px;
+  width: 780px;
+  height: auto;
+}
+
+input[type="submit"] {
+  display: block;
+  font-family: 'Ceviche One', cursive;
+  width: 250px;
+  font-size: 3rem;
+  color: #fff;
+  border: none;
+  background: none;
+  padding: 15px 10px;
+  margin: 140px auto 20px;
+  border: 2px solid #adadad;
+}
+
+.flexCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainSize {
+  height: 1000px;
+}
+
+.choices {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.radioHold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto 30px auto;
+  position: relative;
+  border: 1px solid black;
+  width: 150px;
+  padding: 5px 0;
+}
+
+main p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.restaurant {
+  -webkit-animation: result 1.5s infinite;
+          animation: result 1.5s infinite;
+}
+
+.whereYouEatin {
+  text-align: center;
+}
+
+.holdingBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gridCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fullImg {
+  width: 100%;
+}
+
+.contentBox, .imgBox {
+  width: 50%;
+}
+
+.imgBacker {
+  background: thistle;
+  height: 525px;
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  left: 100px;
+  top: 1150px;
+}
+
+.imgBacker2 {
+  background: thistle;
+  height: 550px;
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  left: 100px;
+  top: 3035px;
+}
+
+@media (max-width: 580px) {
+  main {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  input[type="submit"] {
+    font-size: 20px;
+  }
+  .holdingBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

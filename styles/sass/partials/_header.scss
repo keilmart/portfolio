@@ -1,0 +1,181 @@
+header {
+    min-height: 70vh;
+    background: url(assets/headerSplash.png);
+    background-size: contain;
+}
+
+.headerContent {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.logoBoxHeader {
+    width: 540px;
+    height: 340px;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.logo1 {
+    position: absolute;
+    color: rgba(0, 0, 0, 1);
+    z-index: 3;
+}
+
+.logo2 {
+    position: absolute;
+    color: rgba(96, 92, 206, 1);
+    z-index: 2;
+    left: 10px;
+    top: -10px;
+}
+
+.logo3 {
+    position: absolute;
+    color: rgba(64, 224, 208, 1);
+    z-index: 1;
+    left: -10px;
+    top: 10px;
+}
+
+.logoDesc {
+    width: 140px;
+    position: absolute;
+    margin: -10px auto;
+}
+
+.topnav {
+    background: rgba(243, 244, 249, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    z-index: 5;
+}
+
+.brand h2{
+    font-family: 'Londrina Outline', cursive;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 40px;
+}
+
+.menu ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 15px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    float: right;
+    text-align: center;
+    margin: 12px 15px 9px 15px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+}
+
+.menu .contactTab {
+    border: 1.5px solid rgba(96, 92, 206, 1);
+    padding: 14px 10px;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    border-bottom: 3.9px solid rgba(96, 92, 206, 1);
+}
+
+.menu .contactTab:hover {
+    border: 1.5px solid rgba(96, 92, 206, 1);
+    background-color: rgba(96, 92, 206, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 850px) {
+    header {
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 850px) {
+    .logoBoxHeader {
+        width: 420px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 15rem;
+        letter-spacing: 9px;
+    }
+}
+
+@media (max-width: 850px) {
+    .logoDesc h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        min-height: 30vh;
+    }
+}
+
+@media (max-width: 850px) {
+    .logoBoxHeader {
+        width: 310px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 10rem;
+        letter-spacing: 7px;
+    }
+}
+
+@media (max-width: 850px) {
+    .logo2 {
+        left: 6px;
+        top: -6px;
+    }
+}
+
+@media (max-width: 850px) {
+    .logo3 {
+        left: -6px;
+        top: 6px;
+    }
+}
+
+
+
+

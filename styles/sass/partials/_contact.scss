@@ -1,0 +1,163 @@
+.contact {
+    min-height: 70vh;
+    background-image: url(assets/contactContent.png);
+    background-size: contain;
+}
+
+.contact .wrapper {
+    width: 60%;
+}
+
+.contact h2 {
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.contact p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(128, 128, 128, 1);
+    text-align: center;
+}
+
+.contact a {
+        color: rgba(128, 128, 128, 1);
+        text-decoration: none;
+}
+
+.contact a:hover {
+    color: rgba(96, 92, 206, 1);
+}
+
+.contact form{
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 6%;
+}
+
+.formContents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border: 2px solid #605CCE;
+}
+
+.contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 0 55px 0;
+    margin: 0;
+}
+
+.contact li {
+    font-size: 1.8rem;
+    list-style: none;
+    color: rgba(96, 92, 206, 1);
+    padding: 5px 30px;
+}
+
+#message {
+    width: 100%;
+    min-height: 130px;
+    padding: 10px;
+    border: none;
+    background: none;
+    resize: none;
+    border: 2px solid rgba(96, 92, 206, 1);
+}
+
+#name {
+    width: 48%;
+    border: none;
+    background: none;
+    padding: 10px;
+    border-bottom: 2px solid rgba(96, 92, 206, 1);
+    margin: 30px 10px 55px 0;
+}
+
+#email {
+    width: 48%;
+    border: none;
+    background: none;
+    padding: 10px;
+    border-bottom: 2px solid rgba(96, 92, 206, 1);
+    margin: 30px 0 55px 10px;
+}
+
+.contact button {
+    width: 30%;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    border: 1.5px solid;
+    background: none;
+    border: 2px solid rgba(96, 92, 206, 1);
+    transition: 0.7s;
+}
+
+.contact button:hover {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(96, 92, 206, 1);
+    border: 2px solid rgba(96, 92, 206, 1);
+}
+
+footer p {
+    background-color: rgba(243, 244, 249, 1);
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.codeBoxFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeBox {
+    width: 15%;
+    margin: 30px;
+}
+
+@media (max-width: 1300px) {
+    #name {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    #email {
+        width: 100%;
+    }
+}
+
+@media (max-width: 525px) {
+    .contact button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 525px) {
+    .contact li {
+        font-size: 1.5rem;
+        padding: 3px 20px;
+    }
+}
+

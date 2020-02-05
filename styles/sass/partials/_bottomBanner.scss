@@ -1,0 +1,125 @@
+.bottomBanner {
+        width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    position: relative;
+    min-height: 60vh;
+    background-image: linear-gradient(
+    to right,
+    rgba(64, 224, 208, 1),
+    rgba(150, 122, 249, 1)
+    );
+    z-index: 1;
+}
+
+.bottomBanner::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+    to right,
+    rgba(150, 122, 249, 1),
+    rgba(64, 224, 208, 1)
+    );
+    z-index: -1;
+    transition: opacity .4s linear;
+    opacity: 0;
+}
+.bottomBanner:hover::before {
+    opacity: 1;
+}
+
+.bottomBanner h2 {
+    font-size: 20rem;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.logoBoxBottom {
+    width: 970px;
+    height: 340px;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.logo4 {
+    position: absolute;
+    // get proper hex code //
+    color: rgba(255, 255, 255, 1);
+    z-index: 2;
+}
+
+.logo5 {
+    position: absolute;
+        // get proper hex code //
+    color: rgba(0, 0, 0, 1);
+    z-index: 1;
+    left: 10px;
+    top: -10px;
+}
+
+@media (max-width: 1300px) {
+    .logoBoxBottom {
+        width: 780px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bottomBanner h2 {
+        font-size: 15rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .bottomBanner {
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 850px) {
+    .logoBoxBottom {
+        width: 500px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 850px) {
+    .bottomBanner h2 {
+        font-size: 9rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .logo5 {
+    left: 7px;
+    top: -7px;
+    }
+}
+
+@media (max-width: 540px) {
+    .logoBoxBottom {
+        width: 290px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 540px) {
+    .bottomBanner h2 {
+        font-size: 4.3rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .logo5 {
+    left: 5px;
+    top: -5px;
+    }
+}
+
+
