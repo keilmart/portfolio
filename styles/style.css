@@ -371,9 +371,7 @@ h1 {
   overflow: hidden;
   width: 100%;
   position: fixed;
-  /* Set the navbar to fixed position */
   top: 0;
-  /* Position the navbar at the top of the page */
   z-index: 5;
 }
 
@@ -411,8 +409,8 @@ h1 {
   text-align: center;
   margin: 12px 15px 9px 15px;
   padding-bottom: 5px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .contactTab {

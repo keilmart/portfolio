@@ -2,40 +2,40 @@
     min-height: 70vh;
     background-image: url(assets/contactContent.png);
     background-size: contain;
-}
 
-.contact .wrapper {
+    .wrapper {
     width: 60%;
-}
+    }
 
-.contact h2 {
+    h2 {
     text-align: center;
     padding: 50px 0 20px 0;
-}
+    }
 
-.contact p {
+    p {
     font-size: 1.3rem;
     line-height: 1.6;
     text-align: start;
     font-family: 'Open Sans', sans-serif;
     color: rgba(128, 128, 128, 1);
     text-align: center;
-}
+    }
 
-.contact a {
-        color: rgba(128, 128, 128, 1);
-        text-decoration: none;
-}
+    a {
+    color: rgba(128, 128, 128, 1);
+    text-decoration: none;
 
-.contact a:hover {
-    color: rgba(96, 92, 206, 1);
-}
+    &:hover {
+        color: rgba(96, 92, 206, 1);
+    }
+    }
 
-.contact form{
+    form {
     width: 100%;
     max-width: 850px;
     margin: 0 auto;
     padding: 6%;
+    }
 }
 
 .formContents {
@@ -49,7 +49,8 @@
     border: 2px solid #605CCE;
 }
 
-.contact ul {
+.contact {
+    ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -62,13 +63,14 @@
     justify-content: center;
     padding: 0 0 55px 0;
     margin: 0;
-}
+    }
 
-.contact li {
+    li {
     font-size: 1.8rem;
     list-style: none;
     color: rgba(96, 92, 206, 1);
     padding: 5px 30px;
+    }
 }
 
 #message {
@@ -108,12 +110,12 @@
     background: none;
     border: 2px solid rgba(96, 92, 206, 1);
     transition: 0.7s;
-}
 
-.contact button:hover {
+    &:hover {
     color: rgba(255, 255, 255, 1);
     background: rgba(96, 92, 206, 1);
     border: 2px solid rgba(96, 92, 206, 1);
+    }
 }
 
 footer p {
@@ -138,26 +140,25 @@ footer p {
 
 @media (max-width: 1300px) {
     #name {
-        width: 100%;
+    width: 100%;
     }
 }
 
 @media (max-width: 1300px) {
     #email {
-        width: 100%;
+    width: 100%;
     }
 }
 
 @media (max-width: 525px) {
     .contact button {
-        width: 50%;
+    width: 50%;
     }
 }
 
 @media (max-width: 525px) {
     .contact li {
-        font-size: 1.5rem;
-        padding: 3px 20px;
+    font-size: 1.5rem;
+    padding: 3px 20px;
     }
 }
-
