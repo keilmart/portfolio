@@ -1,7 +1,8 @@
 .contact {
     min-height: 70vh;
     background-image: url(assets/contactContent.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .wrapper {
     width: 60%;
@@ -127,18 +128,6 @@ footer p {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-}
-
-.codeBoxFlex {
-        // CHANGE HERE FLEX// 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.codeBox {
-    width: 15%;
-    margin: 30px;
 }
 
 @media (max-width: 1300px) {

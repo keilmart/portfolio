@@ -1,7 +1,8 @@
 header {
     min-height: 70vh;
     background: url(assets/headerSplash.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .headerContent {
