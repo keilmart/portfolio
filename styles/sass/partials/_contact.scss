@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    // move this wrapper into global scope? // 
     .wrapper {
     width: 60%;
     }
@@ -14,10 +15,6 @@
     }
 
     p {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    text-align: start;
-    font-family: 'Open Sans', sans-serif;
     color: rgba(128, 128, 128, 1);
     text-align: center;
     }
@@ -69,7 +66,6 @@
     }
 
     li {
-    font-size: 1.8rem;
     list-style: none;
     color: rgba(96, 92, 206, 1);
     padding: 5px 30px;

@@ -953,10 +953,6 @@ h1 {
 }
 
 .contact p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  text-align: start;
-  font-family: 'Open Sans', sans-serif;
   color: gray;
   text-align: center;
 }
@@ -1004,7 +1000,6 @@ h1 {
 }
 
 .contact li {
-  font-size: 1.8rem;
   list-style: none;
   color: #605cce;
   padding: 5px 30px;
