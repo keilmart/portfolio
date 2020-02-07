@@ -362,42 +362,37 @@ h1 {
 }
 
 .topnav {
-  background: #f3f4f9;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow: hidden;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 5;
+  margin: 1rem 2rem;
+  padding: .5rem 0;
 }
 
 .brand h2 {
   font-family: 'Londrina Outline', cursive;
   text-transform: uppercase;
   color: black;
-  margin-left: 40px;
+}
+
+.menu {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: auto;
 }
 
 .menu ul {
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: 15px;
 }
 
 .menu li {
