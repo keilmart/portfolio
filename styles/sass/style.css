@@ -458,7 +458,7 @@ h1 {
 
 @media (max-width: 540px) {
   .headerContent {
-    min-height: 70vh;
+    min-height: 80vh;
   }
 }
 
@@ -1088,3 +1088,4 @@ footer p {
     padding: 3px 20px;
   }
 }
+/*# sourceMappingURL=style.css.map */
