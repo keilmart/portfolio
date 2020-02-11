@@ -147,6 +147,12 @@ footer p {
     }
 }
 
+@media (max-width: 800px) {
+    .contact {
+    background-image: none;
+    }
+}
+
 @media (max-width: 525px) {
     .contact button {
     width: 50%;

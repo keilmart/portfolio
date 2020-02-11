@@ -305,8 +305,14 @@ img {
   }
 }
 
+@media (max-width: 680px) {
+  h3 {
+    text-align: center;
+  }
+}
+
 header {
-  min-height: 70vh;
+  min-height: 75vh;
   background: url(assets/headerSplash.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -593,6 +599,18 @@ h1 {
   }
 }
 
+@media (max-width: 800px) {
+  .about {
+    background: #f3f4f9;
+  }
+}
+
+@media (max-width: 680px) {
+  .aboutContent {
+    padding-right: 0;
+  }
+}
+
 .skills {
   width: 100%;
   display: -webkit-box;
@@ -678,10 +696,44 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .iconContainerIcon {
     width: calc(100% / 3);
     padding-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .iconContainerIcon {
+    width: calc(100% / 3);
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 525px) {
+  .contact h2 {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 525px) {
+  .iconContainer .iconContainerIcon {
+    width: calc(100% / 5);
+    padding-top: 4px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .iconContainer p {
+    font-size: .7rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 525px) {
+  .skills {
+    min-height: 30vh;
   }
 }
 
@@ -1085,6 +1137,12 @@ footer p {
   #email {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    background-image: none;
   }
 }
 

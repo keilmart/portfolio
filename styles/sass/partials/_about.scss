@@ -80,3 +80,15 @@
     padding: 0 0 50px 0;
     }
 }
+
+@media (max-width: 800px) {
+    .about {
+    background: rgba(243, 244, 249, 1);
+    }
+}
+
+@media (max-width: 680px) {
+    .aboutContent {
+        padding-right: 0;
+    }
+}
