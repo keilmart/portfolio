@@ -12,6 +12,19 @@
     margin: 0 auto;
 }
 
+    .wrapper {
+    width: 60%;
+    }
+
+
+.flexItem {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     color: rgba(128, 128, 128, 1);
