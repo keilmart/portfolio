@@ -31,6 +31,8 @@ h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 2.3rem;
     margin: 0;
+    text-align: start;
+    position: relative;
 }
 
 h4 {
@@ -56,5 +58,12 @@ img {
 @media (max-width: 680px) {
     .wrapper {
     width: 80%;
+    }
+}
+
+@media (max-width: 680px) {
+    h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
     }
 }

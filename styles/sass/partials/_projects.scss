@@ -38,11 +38,6 @@
     padding: 70px 0;
 }
 
-.projectDesc h3 {
-    text-align: start;
-    position: relative;
-}
-
 .projectImg img {
     padding-top: 20px;
 }
@@ -113,5 +108,11 @@
     .projectImg {
     width: 100%;
     padding: 0 0 0 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .buttonContainer {
+        justify-content: center;
     }
 }

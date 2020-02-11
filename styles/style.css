@@ -268,6 +268,8 @@ h3 {
   font-family: 'Bebas Neue', cursive;
   font-size: 2.3rem;
   margin: 0;
+  text-align: start;
+  position: relative;
 }
 
 h4 {
@@ -293,6 +295,13 @@ img {
 @media (max-width: 680px) {
   .wrapper {
     width: 80%;
+  }
+}
+
+@media (max-width: 680px) {
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
   }
 }
 
@@ -458,7 +467,7 @@ h1 {
 
 @media (max-width: 540px) {
   .headerContent {
-    min-height: 70vh;
+    min-height: 80vh;
   }
 }
 
@@ -715,11 +724,6 @@ h1 {
   padding: 70px 0;
 }
 
-.projectDesc h3 {
-  text-align: start;
-  position: relative;
-}
-
 .projectImg img {
   padding-top: 20px;
 }
@@ -798,6 +802,14 @@ h1 {
   .projectImg {
     width: 100%;
     padding: 0 0 0 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .buttonContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
