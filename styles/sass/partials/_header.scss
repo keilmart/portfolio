@@ -3,6 +3,10 @@ header {
     background: url(assets/headerSplash.png);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 850px) {
+    min-height: 40vh;
+    }
 }
 
 .headerContent {
@@ -11,21 +15,48 @@ header {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 540px) {
+    min-height: 80vh;
+    }
 }
 
+//  HERE TOO - REPEATED @MEDIAS //
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 20rem;
     letter-spacing: 10px;
     text-transform: uppercase;
     margin: 0;
+
+    @media (max-width: 850px) {
+    font-size: 15rem;
+    letter-spacing: 9px;
+    }
+
+    @media (max-width: 850px) {
+    font-size: 10rem;
+    letter-spacing: 7px;
+    }
 }
 
+
+// FIX LOGO PLACEMENT TO ALWAYS KEEP CENTER //
 .logoBoxHeader {
     width: 540px;
     height: 340px;
     position: absolute;
     margin: 0 auto;
+
+    @media (max-width: 850px) {
+    width: 420px;
+    height: 280px;
+    }
+
+    @media (max-width: 850px) {
+    width: 310px;
+    height: 200px;
+    }
 }
 
 .logo1 {
@@ -40,6 +71,11 @@ h1 {
     z-index: 2;
     left: 10px;
     top: -10px;
+
+    @media (max-width: 850px) {
+    left: 6px;
+    top: -6px;
+    }
 }
 
 .logo3 {
@@ -48,12 +84,23 @@ h1 {
     z-index: 1;
     left: -10px;
     top: 10px;
+
+    @media (max-width: 850px) {
+    left: -6px;
+    top: 6px;
+    }
 }
 
 .logoDesc {
     width: 140px;
     position: absolute;
     margin: -10px auto;
+
+        @media (max-width: 850px) {
+        h4 {
+        display: none;
+        }
+    }
 }
 
 .topnav {
@@ -70,8 +117,10 @@ h1 {
 
 .brand h2 {
     font-family: 'Londrina Outline', cursive;
+    font-size: 4.2rem;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 1);
+
 }
 
 .menu {
@@ -113,69 +162,4 @@ h1 {
     }
 }
 
-@media (max-width: 850px) {
-    header {
-    min-height: 40vh;
-    }
-}
-
-@media (max-width: 850px) {
-    .logoBoxHeader {
-    width: 420px;
-    height: 280px;
-    }
-}
-
-@media (max-width: 850px) {
-    h1 {
-    font-size: 15rem;
-    letter-spacing: 9px;
-    }
-}
-
-@media (max-width: 850px) {
-    .logoDesc h4 {
-    display: none;
-    }
-}
-
-@media (max-width: 540px) {
-    .headerContent {
-    min-height: 80vh;
-    }
-}
-
-@media (max-width: 850px) {
-    .logoBoxHeader {
-    width: 310px;
-    height: 200px;
-    }
-}
-
-@media (max-width: 850px) {
-    h1 {
-    font-size: 10rem;
-    letter-spacing: 7px;
-    }
-}
-
-@media (max-width: 850px) {
-    .logo2 {
-    left: 6px;
-    top: -6px;
-    }
-}
-
-@media (max-width: 850px) {
-    .logo3 {
-    left: -6px;
-    top: 6px;
-    }
-}
-
-@media (max-width: 540px) {
-    menu li {
-        display: none;
-    }
-}
 

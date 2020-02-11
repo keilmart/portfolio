@@ -243,15 +243,23 @@ html {
   margin: 0 auto;
 }
 
+@media (max-width: 850px) {
+  .wrapper {
+    width: 75%;
+  }
+}
+
+@media (max-width: 680px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+
 .wrapper2 {
   width: 85%;
   height: 100%;
   max-width: 1600px;
   margin: 0 auto;
-}
-
-.wrapper {
-  width: 60%;
 }
 
 .flexItem {
@@ -274,12 +282,25 @@ h2 {
   margin: 0;
 }
 
+@media (max-width: 680px) {
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+}
+
 h3 {
   font-family: 'Bebas Neue', cursive;
   font-size: 2.3rem;
   margin: 0;
   text-align: start;
   position: relative;
+}
+
+@media (max-width: 680px) {
+  h3 {
+    text-align: center;
+  }
 }
 
 h4 {
@@ -296,36 +317,17 @@ img {
   border: 0;
 }
 
-@media (max-width: 850px) {
-  .wrapper {
-    width: 75%;
-  }
-}
-
-@media (max-width: 680px) {
-  .wrapper {
-    width: 80%;
-  }
-}
-
-@media (max-width: 680px) {
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 680px) {
-  h3 {
-    text-align: center;
-  }
-}
-
 header {
   min-height: 75vh;
   background: url(assets/headerSplash.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 850px) {
+  header {
+    min-height: 40vh;
+  }
 }
 
 .headerContent {
@@ -340,6 +342,12 @@ header {
           justify-content: center;
 }
 
+@media (max-width: 540px) {
+  .headerContent {
+    min-height: 80vh;
+  }
+}
+
 h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 20rem;
@@ -348,11 +356,39 @@ h1 {
   margin: 0;
 }
 
+@media (max-width: 850px) {
+  h1 {
+    font-size: 15rem;
+    letter-spacing: 9px;
+  }
+}
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 10rem;
+    letter-spacing: 7px;
+  }
+}
+
 .logoBoxHeader {
   width: 540px;
   height: 340px;
   position: absolute;
   margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+  .logoBoxHeader {
+    width: 420px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 850px) {
+  .logoBoxHeader {
+    width: 310px;
+    height: 200px;
+  }
 }
 
 .logo1 {
@@ -369,6 +405,13 @@ h1 {
   top: -10px;
 }
 
+@media (max-width: 850px) {
+  .logo2 {
+    left: 6px;
+    top: -6px;
+  }
+}
+
 .logo3 {
   position: absolute;
   color: turquoise;
@@ -377,10 +420,23 @@ h1 {
   top: 10px;
 }
 
+@media (max-width: 850px) {
+  .logo3 {
+    left: -6px;
+    top: 6px;
+  }
+}
+
 .logoDesc {
   width: 140px;
   position: absolute;
   margin: -10px auto;
+}
+
+@media (max-width: 850px) {
+  .logoDesc h4 {
+    display: none;
+  }
 }
 
 .topnav {
@@ -397,6 +453,7 @@ h1 {
 
 .brand h2 {
   font-family: 'Londrina Outline', cursive;
+  font-size: 4.2rem;
   text-transform: uppercase;
   color: black;
 }
@@ -440,76 +497,16 @@ h1 {
   color: white;
 }
 
-@media (max-width: 850px) {
-  header {
-    min-height: 40vh;
-  }
-}
-
-@media (max-width: 850px) {
-  .logoBoxHeader {
-    width: 420px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 850px) {
-  h1 {
-    font-size: 15rem;
-    letter-spacing: 9px;
-  }
-}
-
-@media (max-width: 850px) {
-  .logoDesc h4 {
-    display: none;
-  }
-}
-
-@media (max-width: 540px) {
-  .headerContent {
-    min-height: 80vh;
-  }
-}
-
-@media (max-width: 850px) {
-  .logoBoxHeader {
-    width: 310px;
-    height: 200px;
-  }
-}
-
-@media (max-width: 850px) {
-  h1 {
-    font-size: 10rem;
-    letter-spacing: 7px;
-  }
-}
-
-@media (max-width: 850px) {
-  .logo2 {
-    left: 6px;
-    top: -6px;
-  }
-}
-
-@media (max-width: 850px) {
-  .logo3 {
-    left: -6px;
-    top: 6px;
-  }
-}
-
-@media (max-width: 540px) {
-  menu li {
-    display: none;
-  }
-}
-
 .about {
   background-image: url(assets/aboutContent.png);
   min-height: 70vh;
   background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .about {
+    background: #f3f4f9;
+  }
 }
 
 .aboutContainer {
@@ -517,9 +514,30 @@ h1 {
   padding: 100px 0;
 }
 
+@media (max-width: 1300px) {
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .aboutContent {
   width: 70%;
   padding-right: 40px;
+}
+
+@media (max-width: 1300px) {
+  .aboutContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .aboutContent {
+    padding-right: 0;
+  }
 }
 
 .profilePic {
@@ -532,6 +550,13 @@ h1 {
 .profilePic img {
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 1300px) {
+  .profilePic {
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
 }
 
 .picBorder {
@@ -548,40 +573,6 @@ h1 {
   list-style: none;
   color: #605cce;
   padding: 5px 30px;
-}
-
-@media (max-width: 1300px) {
-  .aboutContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 1300px) {
-  .aboutContent {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1300px) {
-  .profilePic {
-    width: 100%;
-    padding: 0 0 50px 0;
-  }
-}
-
-@media (max-width: 800px) {
-  .about {
-    background: #f3f4f9;
-  }
-}
-
-@media (max-width: 680px) {
-  .aboutContent {
-    padding-right: 0;
-  }
 }
 
 .skills {
@@ -624,6 +615,12 @@ h1 {
   padding-bottom: 30px;
 }
 
+@media (max-width: 525px) {
+  .skills {
+    min-height: 30vh;
+  }
+}
+
 .iconContainer {
   width: 100%;
   height: 100%;
@@ -646,44 +643,26 @@ h1 {
   color: black;
 }
 
+@media (max-width: 800px) {
+  .iconContainerIcon {
+    width: calc(100% / 3);
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 525px) {
+  .iconContainerIcon {
+    width: calc(100% / 5);
+    padding-top: 4px;
+    font-size: 2rem;
+  }
+}
+
 .iconContainer p {
   width: 100%;
   text-align: center;
   margin: 15px 0;
   color: rgba(0, 0, 0, 0.65);
-}
-
-.iconContainer .iconContainerIcon {
-  font-size: 4rem;
-  text-align: center;
-}
-
-@media (max-width: 800px) {
-  .iconContainerIcon {
-    width: calc(100% / 3);
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 800px) {
-  .iconContainerIcon {
-    width: calc(100% / 3);
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 525px) {
-  .contact h2 {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 525px) {
-  .iconContainer .iconContainerIcon {
-    width: calc(100% / 5);
-    padding-top: 4px;
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 525px) {
@@ -693,15 +672,24 @@ h1 {
   }
 }
 
-@media (max-width: 525px) {
-  .skills {
-    min-height: 30vh;
-  }
+.iconContainer .iconContainerIcon {
+  font-size: 4rem;
+  text-align: center;
 }
 
 .projects {
   background: #f3f4f9;
   min-height: 100vh;
+}
+
+.projects h2 {
+  text-align: center;
+  position: relative;
+  padding: 70px 0;
+}
+
+.projects img {
+  padding-top: 20px;
 }
 
 .projectContainer {
@@ -711,8 +699,24 @@ h1 {
   justify-content: space-between;
 }
 
+@media (max-width: 1100px) {
+  .projectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .projectImg {
   width: 45%;
+}
+
+@media (max-width: 1100px) {
+  .projectImg {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
 }
 
 .projectDesc {
@@ -723,23 +727,6 @@ h1 {
 
 .projectDesc p {
   margin: 13px 0 0 0;
-}
-
-.projects h2 {
-  text-align: center;
-  position: relative;
-  padding: 70px 0;
-}
-
-.projectImg img {
-  padding-top: 20px;
-}
-
-.codingType {
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  color: black;
 }
 
 .projectDesc .button {
@@ -766,11 +753,33 @@ h1 {
           box-shadow: 5px 5px 10px -2px turquoise;
 }
 
+@media (max-width: 1100px) {
+  .projectDesc {
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+}
+
+.codingType {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+}
+
 .buttonContainer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: flex-start;
   margin-top: 13px;
+}
+
+@media (max-width: 680px) {
+  .buttonContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -779,37 +788,6 @@ h1 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 1100px) {
-  .projectContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 1100px) {
-  .projectDesc {
-    width: 100%;
-    padding: 0 0 50px 0;
-  }
-}
-
-@media (max-width: 1100px) {
-  .projectImg {
-    width: 100%;
-    padding: 0 0 0 0;
-  }
-}
-
-@media (max-width: 680px) {
-  .buttonContainer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -826,6 +804,18 @@ h1 {
   background-image: -webkit-gradient(linear, left top, right top, from(turquoise), to(#967af9));
   background-image: linear-gradient(to right, turquoise, #967af9);
   z-index: 1;
+}
+
+@media (max-width: 850px) {
+  .bottomBanner {
+    min-height: 35vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .bottomBanner {
+    min-height: 15vh;
+  }
 }
 
 .bottomBanner::before {
@@ -854,11 +844,50 @@ h1 {
   margin: 0;
 }
 
+@media (max-width: 1300px) {
+  .bottomBanner h2 {
+    font-size: 15rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .bottomBanner h2 {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .bottomBanner h2 {
+    font-size: 4.8rem;
+  }
+}
+
 .logoBoxBottom {
   width: 970px;
   height: 340px;
   position: absolute;
   margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  .logoBoxBottom {
+    width: 780px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 850px) {
+  .logoBoxBottom {
+    width: 500px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 540px) {
+  .logoBoxBottom {
+    width: 310px;
+    height: 80px;
+  }
 }
 
 .logo4 {
@@ -875,61 +904,10 @@ h1 {
   top: -10px;
 }
 
-@media (max-width: 1300px) {
-  .logoBoxBottom {
-    width: 780px;
-    height: 220px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .bottomBanner h2 {
-    font-size: 15rem;
-  }
-}
-
-@media (max-width: 850px) {
-  .bottomBanner {
-    min-height: 35vh;
-  }
-}
-
-@media (max-width: 850px) {
-  .logoBoxBottom {
-    width: 500px;
-    height: 170px;
-  }
-}
-
-@media (max-width: 850px) {
-  .bottomBanner h2 {
-    font-size: 9rem;
-  }
-}
-
 @media (max-width: 850px) {
   .logo5 {
     left: 7px;
     top: -7px;
-  }
-}
-
-@media (max-width: 540px) {
-  .bottomBanner {
-    min-height: 20vh;
-  }
-}
-
-@media (max-width: 540px) {
-  .logoBoxBottom {
-    width: 310px;
-    height: 80px;
-  }
-}
-
-@media (max-width: 540px) {
-  .bottomBanner h2 {
-    font-size: 4.8rem;
   }
 }
 
@@ -947,8 +925,20 @@ h1 {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 800px) {
+  .contact {
+    background-image: none;
+  }
+}
+
 .contact .wrapper {
   width: 60%;
+}
+
+@media (max-width: 1300px) {
+  .contact .wrapper {
+    width: 80%;
+  }
 }
 
 .contact h2 {
@@ -970,17 +960,6 @@ h1 {
   color: #605cce;
 }
 
-.contact form {
-  width: 100%;
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 6%;
-}
-
-.formContents {
-  border: 2px solid #605CCE;
-}
-
 .contact ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -993,6 +972,48 @@ h1 {
   list-style: none;
   color: #605cce;
   padding: 5px 30px;
+}
+
+@media (max-width: 525px) {
+  .contact li {
+    font-size: 1.5rem;
+    padding: 3px 20px;
+  }
+}
+
+.contact button {
+  width: 30%;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 30px 0px;
+  border: 1.5px solid;
+  background: none;
+  border: 2px solid #605cce;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.contact button:hover {
+  color: white;
+  background: #605cce;
+  border: 2px solid #605cce;
+}
+
+@media (max-width: 525px) {
+  .contact button {
+    width: 50%;
+  }
+}
+
+.contact form {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 6%;
+}
+
+.formContents {
+  border: 2px solid #605CCE;
 }
 
 #message {
@@ -1014,6 +1035,14 @@ h1 {
   margin: 30px 10px 55px 0;
 }
 
+@media (max-width: 1200px) {
+  #name {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
 #email {
   width: 48%;
   border: none;
@@ -1023,22 +1052,11 @@ h1 {
   margin: 30px 0 55px 10px;
 }
 
-.contact button {
-  width: 30%;
-  text-align: center;
-  padding: 10px 20px;
-  margin: 30px 0px;
-  border: 1.5px solid;
-  background: none;
-  border: 2px solid #605cce;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.contact button:hover {
-  color: white;
-  background: #605cce;
-  border: 2px solid #605cce;
+@media (max-width: 1200px) {
+  #email {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 footer p {
@@ -1048,44 +1066,4 @@ footer p {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-}
-
-@media (max-width: 1300px) {
-  .contact .wrapper {
-    width: 80%;
-  }
-}
-
-@media (max-width: 1200px) {
-  #name {
-    width: 100%;
-    margin-bottom: 0;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 1200px) {
-  #email {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 800px) {
-  .contact {
-    background-image: none;
-  }
-}
-
-@media (max-width: 525px) {
-  .contact button {
-    width: 50%;
-  }
-}
-
-@media (max-width: 525px) {
-  .contact li {
-    font-size: 1.5rem;
-    padding: 3px 20px;
-  }
 }

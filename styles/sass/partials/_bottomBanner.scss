@@ -7,6 +7,15 @@
     background-image: linear-gradient(to right, rgba(64, 224, 208, 1), rgba(150, 122, 249, 1));
     z-index: 1;
 
+    @media (max-width: 850px) {
+    min-height: 35vh;
+    }
+
+    @media (max-width: 540px) {
+    min-height: 15vh;
+    }
+    
+
     &::before {
     position: absolute;
     content: "";
@@ -24,11 +33,23 @@
     opacity: 1;
     }
 
-    h2 {
-    font-size: 20rem;
-    letter-spacing: 15px;
-    text-transform: uppercase;
-    margin: 0;
+        h2 {
+        font-size: 20rem;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        margin: 0;
+
+        @media (max-width: 1300px) {
+        font-size: 15rem;
+        }
+
+        @media (max-width: 850px) {
+        font-size: 9rem;
+        }
+
+        @media (max-width: 540px) {
+        font-size: 4.8rem;
+        }
     }
 }
 
@@ -37,6 +58,21 @@
     height: 340px;
     position: absolute;
     margin: 0 auto;
+
+    @media (max-width: 1300px) {
+    width: 780px;
+    height: 220px;
+    }
+
+    @media (max-width: 850px) {
+    width: 500px;
+    height: 170px;
+    }
+
+    @media (max-width: 540px) {
+    width: 310px;
+    height: 80px;
+    }
 }
 
 .logo4 {
@@ -51,69 +87,15 @@
     z-index: 1;
     left: 10px;
     top: -10px;
-}
 
-@media (max-width: 1300px) {
-    .logoBoxBottom {
-    width: 780px;
-    height: 220px;
-    }
-}
-
-@media (max-width: 1300px) {
-    .bottomBanner h2 {
-    font-size: 15rem;
-    }
-}
-
-@media (max-width: 850px) {
-    .bottomBanner {
-    min-height: 35vh;
-    }
-}
-
-@media (max-width: 850px) {
-    .logoBoxBottom {
-    width: 500px;
-    height: 170px;
-    }
-}
-
-@media (max-width: 850px) {
-    .bottomBanner h2 {
-    font-size: 9rem;
-    }
-}
-
-@media (max-width: 850px) {
-    .logo5 {
+    @media (max-width: 850px) {
     left: 7px;
     top: -7px;
     }
-}
 
-@media (max-width: 540px) {
-    .bottomBanner {
-    min-height: 20vh;
-    }
-}
-
-@media (max-width: 540px) {
-    .logoBoxBottom {
-    width: 310px;
-    height: 80px;
-    }
-}
-
-@media (max-width: 540px) {
-    .bottomBanner h2 {
-    font-size: 4.8rem;
-    }
-}
-
-@media (max-width: 540px) {
-    .logo5 {
+    @media (max-width: 540px) {
     left: 5px;
     top: -5px;
     }
 }
+

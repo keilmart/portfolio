@@ -3,6 +3,14 @@
     height: 100%;
     max-width: 1600px;
     margin: 0 auto;
+
+    @media (max-width: 850px) {
+    width: 75%;
+    }
+
+    @media (max-width: 680px) {
+    width: 80%;
+    }
 }
 
 .wrapper2 {
@@ -11,11 +19,6 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-
-    .wrapper {
-    width: 60%;
-    }
-
 
 .flexItem {
     display: -webkit-box;
@@ -31,13 +34,17 @@ p {
     font-size: 1.15rem;
     line-height: 1.6;
     text-align: start;
-
 }
 
 h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 4.2rem;
     margin: 0;
+
+    @media (max-width: 680px) {
+    font-size: 3rem;
+    margin-bottom: 0;
+    }
 }
 
 h3 {
@@ -46,6 +53,10 @@ h3 {
     margin: 0;
     text-align: start;
     position: relative;
+
+    @media (max-width: 680px) {
+        text-align: center;
+    }
 }
 
 h4 {
@@ -62,27 +73,3 @@ img {
     border: 0;
 }
 
-@media (max-width: 850px) {
-    .wrapper {
-    width: 75%;
-    }
-}
-
-@media (max-width: 680px) {
-    .wrapper {
-    width: 80%;
-    }
-}
-
-@media (max-width: 680px) {
-    h2 {
-    font-size: 3rem;
-    margin-bottom: 0;
-    }
-}
-
-@media (max-width: 680px) {
-    h3 {
-        text-align: center;
-    }
-}

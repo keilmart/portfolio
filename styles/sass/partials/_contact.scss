@@ -4,9 +4,16 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    // move this wrapper into global scope? // 
+    @media (max-width: 800px) {
+    background-image: none;
+    }
+
     .wrapper {
     width: 60%;
+
+        @media (max-width: 1300px) {
+        width: 80%;
+        }
     }
 
     h2 {
@@ -28,19 +35,6 @@
     }
     }
 
-    form {
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 6%;
-    }
-}
-
-.formContents {
-    border: 2px solid #605CCE;
-}
-
-.contact {
     ul {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -53,7 +47,44 @@
     list-style: none;
     color: rgba(96, 92, 206, 1);
     padding: 5px 30px;
+
+        @media (max-width: 525px) {
+        font-size: 1.5rem;
+        padding: 3px 20px;
+        }
     }
+
+    button {
+    width: 30%;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    border: 1.5px solid;
+    background: none;
+    border: 2px solid rgba(96, 92, 206, 1);
+    transition: 0.7s;
+
+    &:hover {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(96, 92, 206, 1);
+    border: 2px solid rgba(96, 92, 206, 1);
+    }
+
+        @media (max-width: 525px) {
+        width: 50%;
+        }
+    }
+
+    form {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 6%;
+    }
+}
+
+.formContents {
+    border: 2px solid #605CCE;
 }
 
 #message {
@@ -73,7 +104,14 @@
     padding: 10px;
     border-bottom: 2px solid rgba(96, 92, 206, 1);
     margin: 30px 10px 55px 0;
+
+    @media (max-width: 1200px) {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+    }
 }
+
 
 #email {
     width: 48%;
@@ -82,22 +120,10 @@
     padding: 10px;
     border-bottom: 2px solid rgba(96, 92, 206, 1);
     margin: 30px 0 55px 10px;
-}
 
-.contact button {
-    width: 30%;
-    text-align: center;
-    padding: 10px 20px;
-    margin: 30px 0px;
-    border: 1.5px solid;
-    background: none;
-    border: 2px solid rgba(96, 92, 206, 1);
-    transition: 0.7s;
-
-    &:hover {
-    color: rgba(255, 255, 255, 1);
-    background: rgba(96, 92, 206, 1);
-    border: 2px solid rgba(96, 92, 206, 1);
+    @media (max-width: 1200px) {
+    width: 100%;
+    margin-left: 0;
     }
 }
 
@@ -108,44 +134,4 @@ footer p {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-}
-
-@media (max-width: 1300px) {
-    .contact .wrapper {
-    width: 80%;
-    }
-}
-
-@media (max-width: 1200px) {
-    #name {
-    width: 100%;
-    margin-bottom: 0;
-    margin-right: 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    #email {
-    width: 100%;
-    margin-left: 0;
-    }
-}
-
-@media (max-width: 800px) {
-    .contact {
-    background-image: none;
-    }
-}
-
-@media (max-width: 525px) {
-    .contact button {
-    width: 50%;
-    }
-}
-
-@media (max-width: 525px) {
-    .contact li {
-    font-size: 1.5rem;
-    padding: 3px 20px;
-    }
 }

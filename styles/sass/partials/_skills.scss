@@ -29,6 +29,10 @@
     margin-top: 60px;
     padding-bottom: 30px;
     }
+
+    @media (max-width: 525px) {
+        min-height: 30vh;
+    }
 }
 
 .iconContainer {
@@ -50,6 +54,17 @@
     &:hover {
     color: rgba(0, 0, 0, 1);
     }
+
+    @media (max-width: 800px) {
+    width: calc(100% / 3);
+    padding-top: 20px;
+    }
+
+    @media (max-width: 525px) {
+    width: calc(100% / 5);
+    padding-top: 4px;
+    font-size: 2rem;
+    }
 }
 
 .iconContainer {
@@ -58,51 +73,15 @@
     text-align: center;
     margin: 15px 0;
     color: rgba(0, 0, 0, 0.65);
+
+        @media (max-width: 525px) {
+        font-size: .7rem;
+        line-height: 1;
+        }
     }
 
     .iconContainerIcon {
     font-size: 4rem;
     text-align: center;
-    }
-}
-
-@media (max-width: 800px) {
-    .iconContainerIcon {
-    width: calc(100% / 3);
-    padding-top: 20px;
-    }
-}
-
-@media (max-width: 800px) {
-    .iconContainerIcon {
-    width: calc(100% / 3);
-    padding-top: 20px;
-    }
-}
-
-@media (max-width: 525px) {
-    .contact h2 {
-    padding-top: 0;
-    }
-}
-
-@media (max-width: 525px) {
-    .iconContainer .iconContainerIcon {
-    width: calc(100% / 5);
-    padding-top: 4px;
-    font-size: 2rem;
-    }
-}
-
-@media (max-width: 525px) {
-    .iconContainer p {
-        font-size: .7rem;
-        line-height: 1;
-    }
-}
-
-@media (max-width: 525px) {
-    .skills {
-        min-height: 30vh;
     }
 }
