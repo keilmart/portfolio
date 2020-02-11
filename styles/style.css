@@ -358,20 +358,13 @@ h1 {
 
 @media (max-width: 850px) {
   h1 {
-    font-size: 15rem;
-    letter-spacing: 9px;
-  }
-}
-
-@media (max-width: 850px) {
-  h1 {
     font-size: 10rem;
     letter-spacing: 7px;
   }
 }
 
 .logoBoxHeader {
-  width: 540px;
+  width: 530px;
   height: 340px;
   position: absolute;
   margin: 0 auto;
@@ -379,14 +372,7 @@ h1 {
 
 @media (max-width: 850px) {
   .logoBoxHeader {
-    width: 420px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 850px) {
-  .logoBoxHeader {
-    width: 310px;
+    width: 290px;
     height: 200px;
   }
 }
@@ -677,6 +663,13 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 525px) {
+  .iconContainer .iconContainerIcon {
+    padding: 5px 0;
+    font-size: 2rem;
+  }
+}
+
 .projects {
   background: #f3f4f9;
   min-height: 100vh;
@@ -686,6 +679,12 @@ h1 {
   text-align: center;
   position: relative;
   padding: 70px 0;
+}
+
+@media (max-width: 525px) {
+  .projects h2 {
+    padding: 50px 0 0 0;
+  }
 }
 
 .projects img {

@@ -21,7 +21,6 @@ header {
     }
 }
 
-//  HERE TOO - REPEATED @MEDIAS //
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 20rem;
@@ -30,31 +29,19 @@ h1 {
     margin: 0;
 
     @media (max-width: 850px) {
-    font-size: 15rem;
-    letter-spacing: 9px;
-    }
-
-    @media (max-width: 850px) {
     font-size: 10rem;
     letter-spacing: 7px;
     }
 }
 
-
-// FIX LOGO PLACEMENT TO ALWAYS KEEP CENTER //
 .logoBoxHeader {
-    width: 540px;
+    width: 530px;
     height: 340px;
     position: absolute;
     margin: 0 auto;
 
     @media (max-width: 850px) {
-    width: 420px;
-    height: 280px;
-    }
-
-    @media (max-width: 850px) {
-    width: 310px;
+    width: 290px;
     height: 200px;
     }
 }

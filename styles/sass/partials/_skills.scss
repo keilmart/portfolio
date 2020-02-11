@@ -83,5 +83,10 @@
     .iconContainerIcon {
     font-size: 4rem;
     text-align: center;
+
+        @media (max-width: 525px) {
+        padding: 5px 0;
+        font-size: 2rem;
+        }
     }
 }
