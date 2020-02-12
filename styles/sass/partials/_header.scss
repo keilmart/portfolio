@@ -1,125 +1,125 @@
 header {
-    min-height: 75vh;
-    background: url(assets/headerSplash.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  min-height: 75vh;
+  background: url(assets/headerSplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     min-height: 40vh;
-    }
+  }
 }
 
 .headerContent {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 
-    @media (max-width: 540px) {
-    min-height: 80vh;
-    }
+  @media (max-width: 540px) {
+    min-height: 85vh;
+  }
 }
 
 h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20rem;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    margin: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 0;
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     font-size: 10rem;
     letter-spacing: 7px;
-    }
+  }
 }
 
 .logoBoxHeader {
-    width: 530px;
-    height: 340px;
-    position: absolute;
-    margin: 0 auto;
+  width: 530px;
+  height: 340px;
+  position: absolute;
+  margin: 0 auto;
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     width: 290px;
     height: 200px;
-    }
+  }
 }
 
 .logo1 {
-    position: absolute;
-    color: rgba(0, 0, 0, 1);
-    z-index: 3;
+  position: absolute;
+  color: rgba(0, 0, 0, 1);
+  z-index: 3;
 }
 
 .logo2 {
-    position: absolute;
-    color: rgba(96, 92, 206, 1);
-    z-index: 2;
-    left: 10px;
-    top: -10px;
+  position: absolute;
+  color: rgba(96, 92, 206, 1);
+  z-index: 2;
+  left: 10px;
+  top: -10px;
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     left: 6px;
     top: -6px;
-    }
+  }
 }
 
 .logo3 {
-    position: absolute;
-    color: rgba(64, 224, 208, 1);
-    z-index: 1;
-    left: -10px;
-    top: 10px;
+  position: absolute;
+  color: rgba(64, 224, 208, 1);
+  z-index: 1;
+  left: -10px;
+  top: 10px;
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     left: -6px;
     top: 6px;
-    }
+  }
 }
 
 .logoDesc {
-    width: 140px;
-    position: absolute;
-    margin: -10px auto;
+  width: 140px;
+  position: absolute;
+  margin: -10px auto;
 
-        @media (max-width: 850px) {
-        h4 {
-        display: none;
-        }
+  @media (max-width: 850px) {
+    h4 {
+      display: none;
     }
+  }
 }
 
 .topnav {
-    width: 100%;
-    background: rgba(243, 244, 249, 1);
-    position: fixed;
-    z-index: 5;
-    overflow: hidden;
+  width: 100%;
+  background: rgba(243, 244, 249, 1);
+  position: fixed;
+  z-index: 5;
+  overflow: hidden;
 }
 
 .navbar {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .brand h2 {
-    font-family: 'Londrina Outline', cursive;
-    font-size: 4.2rem;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 1);
+  font-family: "Londrina Outline", cursive;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
 }
 
 .menu {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .menu {
-    li {
+  li {
     list-style: none;
-    } 
+  }
 
-    a {
-    font-family: 'Open Sans', sans-serif;
+  a {
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
@@ -128,24 +128,24 @@ h1 {
     margin: 16px 15px 0 15px;
     padding-bottom: 5px;
     transition: 0.3s;
-    }
+  }
 
-    .contactTab {
+  .contactTab {
     border: 1.5px solid rgba(96, 92, 206, 1);
     padding: 14px 10px;
     margin: 0 5px;
     transition: 0.5s;
-    }
+  }
 
-    a:hover, a:focus {
+  a:hover,
+  a:focus {
     border-bottom: 3.9px solid rgba(96, 92, 206, 1);
-    }
+  }
 
-    .contactTab:hover, :focus {
+  .contactTab:hover,
+  :focus {
     border: 1.5px solid rgba(96, 92, 206, 1);
     background-color: rgba(96, 92, 206, 1);
     color: rgba(255, 255, 255, 1);
-    }
+  }
 }
-
-
