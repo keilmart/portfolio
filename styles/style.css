@@ -284,7 +284,7 @@ h2 {
 
 @media (max-width: 680px) {
   h2 {
-    font-size: 3rem;
+    font-size: 2.9rem;
     margin-bottom: 0;
   }
 }
@@ -832,7 +832,7 @@ h1 {
 
 @media (max-width: 540px) {
   .bottomBanner {
-    min-height: 20vh;
+    min-height: 18vh;
   }
 }
 
