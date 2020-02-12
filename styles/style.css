@@ -605,8 +605,8 @@ h1 {
   background-image: -webkit-gradient(linear, left top, right top, from(#967af9), to(turquoise));
   background-image: linear-gradient(to right, #967af9, turquoise);
   z-index: -1;
-  -webkit-transition: opacity .4s linear;
-  transition: opacity .4s linear;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
   opacity: 0;
 }
 
@@ -616,7 +616,13 @@ h1 {
 
 .skills h2 {
   text-align: center;
-  margin: 12px 0 10px 0;
+  margin: 50px 0 10px 0;
+}
+
+@media (max-width: 525px) {
+  .skills h2 {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 525px) {
@@ -671,7 +677,7 @@ h1 {
 
 @media (max-width: 525px) {
   .iconContainer p {
-    font-size: .7rem;
+    font-size: 0.7rem;
     line-height: 1;
   }
 }
@@ -683,7 +689,7 @@ h1 {
 
 @media (max-width: 525px) {
   .iconContainer .iconContainerIcon {
-    padding: 5px 0;
+    padding: 5px 0 18px 0;
     font-size: 2rem;
   }
 }
@@ -701,12 +707,12 @@ h1 {
 
 @media (max-width: 525px) {
   .projects h2 {
-    padding: 50px 0 0 0;
+    padding: 40px 0 0 0;
   }
 }
 
 .projects img {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .projectContainer {
@@ -754,7 +760,7 @@ h1 {
 
 .projectDesc .button {
   width: 110px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
@@ -786,14 +792,14 @@ h1 {
 @media (max-width: 525px) {
   .projectDesc {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
 .codingType {
   font-size: 1.5rem;
   text-align: center;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: black;
 }
 
@@ -973,7 +979,7 @@ h1 {
 
 .contact h2 {
   text-align: center;
-  padding: 50px 0 20px 0;
+  padding: 40px 0;
 }
 
 .contact p {
@@ -1043,7 +1049,7 @@ h1 {
 }
 
 .formContents {
-  border: 2px solid #605CCE;
+  border: 2px solid #605cce;
 }
 
 #message {
@@ -1095,5 +1101,5 @@ footer p {
   font-size: 1rem;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
