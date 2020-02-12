@@ -34,6 +34,10 @@ p {
     font-size: 1.15rem;
     line-height: 1.6;
     text-align: start;
+
+    @media (max-width: 800px) {
+    font-size: .9rem;
+    }
 }
 
 h2 {

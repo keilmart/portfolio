@@ -54,12 +54,12 @@
     color: rgba(0, 0, 0, 1);
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
     width: calc(100% / 3);
     padding-top: 20px;
     }
 
-    @media (max-width: 525px) {
+    @media (max-width: 600px) {
     width: calc(100% / 5);
     padding-top: 4px;
     font-size: 2rem;
