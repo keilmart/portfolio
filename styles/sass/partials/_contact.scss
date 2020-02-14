@@ -64,7 +64,8 @@
     border: 2px solid rgba(96, 92, 206, 1);
     transition: 0.7s;
 
-    &:hover {
+    &:hover,
+    :focus {
       color: rgba(255, 255, 255, 1);
       background: rgba(96, 92, 206, 1);
       border: 2px solid rgba(96, 92, 206, 1);
