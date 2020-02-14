@@ -11,7 +11,7 @@ html {
 
 body {
   color: black;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.1rem;
   text-transform: uppercase;
   background: pink;
@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-size: 100px;
-  font-family: 'Ceviche One', cursive;
+  font-family: "Ceviche One", cursive;
   color: black;
   padding: 5px 5px;
   text-align: center;
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: 'Atomic Age', cursive;
+  font-family: "Atomic Age", cursive;
   font-weight: 100;
   color: black;
   text-align: center;
@@ -38,7 +38,7 @@ h2 {
 
 h4 {
   font-size: 30px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: black;
   text-align: center;
   padding-bottom: 30px;
@@ -80,7 +80,7 @@ h4 {
 
 input[type="submit"] {
   display: block;
-  font-family: 'Ceviche One', cursive;
+  font-family: "Ceviche One", cursive;
   width: 250px;
   font-size: 3rem;
   color: #fff;
@@ -97,16 +97,16 @@ input[type="submit"] {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .mainSize {
@@ -124,14 +124,14 @@ input[type="submit"] {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 20px auto 30px auto;
   position: relative;
   border: 1px solid black;
@@ -147,7 +147,7 @@ main p {
 
 .restaurant {
   -webkit-animation: result 1.5s infinite;
-          animation: result 1.5s infinite;
+  animation: result 1.5s infinite;
 }
 
 .whereYouEatin {
@@ -160,13 +160,13 @@ main p {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .gridCol {
@@ -175,23 +175,24 @@ main p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .fullImg {
   width: 100%;
 }
 
-.contentBox, .imgBox {
+.contentBox,
+.imgBox {
   width: 50%;
 }
 
@@ -231,12 +232,12 @@ main p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }

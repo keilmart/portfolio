@@ -439,12 +439,6 @@ h1 {
   overflow: hidden;
 }
 
-@media (max-width: 800px) {
-  .topnav {
-    display: none;
-  }
-}
-
 .navbar {
   margin: 0 1rem;
 }
@@ -458,6 +452,12 @@ h1 {
 
 .menu {
   margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu li {
@@ -693,6 +693,13 @@ h1 {
 .iconContainer .iconContainerIcon {
   font-size: 4rem;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .iconContainer .iconContainerIcon {
+    padding: 0;
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 525px) {
