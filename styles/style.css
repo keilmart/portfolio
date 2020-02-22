@@ -450,6 +450,12 @@ h1 {
   color: black;
 }
 
+@media (max-width: 550px) {
+  .brand h2 {
+    font-size: 2.7rem;
+  }
+}
+
 .menu {
   margin-left: auto;
 }
@@ -492,7 +498,7 @@ h1 {
 
 .menu .contactTab:hover,
 .menu :focus {
-  border: 1.5px solid #605cce;
+  border: 1.5px solid black;
   background-color: #605cce;
   color: white;
 }
@@ -548,7 +554,7 @@ h1 {
 
 .profilePic {
   width: 30%;
-  padding-top: 80px;
+  padding-top: 55px;
   position: relative;
   z-index: 0;
 }
@@ -1056,7 +1062,8 @@ h1 {
   transition: 0.7s;
 }
 
-.contact button:hover {
+.contact button:hover,
+.contact button :focus {
   color: white;
   background: #605cce;
   border: 2px solid #605cce;
