@@ -788,6 +788,10 @@ h1 {
   padding-top: 5px;
 }
 
+.projectDesc p .topper p {
+  border-top: none;
+}
+
 .projectDesc .button {
   width: 110px;
   font-family: "Roboto", sans-serif;
