@@ -1,101 +1,108 @@
 .bottomBanner {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    min-height: 60vh;
-    background-image: linear-gradient(to right, rgba(64, 224, 208, 1), rgba(150, 122, 249, 1));
-    z-index: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 45vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(64, 224, 208, 1),
+    rgba(150, 122, 249, 1)
+  );
+  z-index: 1;
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     min-height: 35vh;
-    }
+  }
 
-    @media (max-width: 540px) {
+  @media (max-width: 540px) {
     min-height: 22vh;
-    }
-    
+  }
 
-    &::before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to right, rgba(150, 122, 249, 1), rgba(64, 224, 208, 1));
+    background-image: linear-gradient(
+      to right,
+      rgba(150, 122, 249, 1),
+      rgba(64, 224, 208, 1)
+    );
     z-index: -1;
-    transition: opacity .4s linear;
+    transition: opacity 0.4s linear;
     opacity: 0;
-    }
+  }
 
-    &:hover::before {
+  &:hover::before {
     opacity: 1;
+  }
+
+  h2 {
+    font-size: 11.5rem;
+    letter-spacing: 15px;
+    font-family: "Roboto", sans-serif;
+    text-transform: lowercase;
+    margin: 0;
+
+    @media (max-width: 1300px) {
+      font-size: 15rem;
     }
 
-        h2 {
-        font-size: 20rem;
-        letter-spacing: 15px;
-        text-transform: uppercase;
-        margin: 0;
-
-        @media (max-width: 1300px) {
-        font-size: 15rem;
-        }
-
-        @media (max-width: 850px) {
-        font-size: 9rem;
-        }
-
-        @media (max-width: 540px) {
-        font-size: 4.8rem;
-        }
+    @media (max-width: 850px) {
+      font-size: 9rem;
     }
+
+    @media (max-width: 540px) {
+      font-size: 4.8rem;
+    }
+  }
 }
 
 .logoBoxBottom {
-    width: 970px;
-    height: 340px;
-    position: absolute;
-    margin: 0 auto;
+  width: 725px;
+  height: 220px;
+  position: absolute;
+  margin: 0 auto;
 
-    @media (max-width: 1300px) {
+  @media (max-width: 1300px) {
     width: 780px;
     height: 220px;
-    }
+  }
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     width: 500px;
     height: 170px;
-    }
+  }
 
-    @media (max-width: 540px) {
+  @media (max-width: 540px) {
     width: 310px;
     height: 80px;
-    }
+  }
 }
 
 .logo4 {
-    position: absolute;
-    color: rgba(255, 255, 255, 1);
-    z-index: 2;
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  z-index: 2;
 }
 
 .logo5 {
-    position: absolute;
-    color: rgba(0, 0, 0, 1);
-    z-index: 1;
-    left: 10px;
-    top: -10px;
+  position: absolute;
+  color: rgba(0, 0, 0, 1);
+  z-index: 1;
+  left: 10px;
+  top: -10px;
 
-    @media (max-width: 850px) {
+  @media (max-width: 850px) {
     left: 7px;
     top: -7px;
-    }
+  }
 
-    @media (max-width: 540px) {
+  @media (max-width: 540px) {
     left: 5px;
     top: -5px;
-    }
+  }
 }
-

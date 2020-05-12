@@ -44,21 +44,22 @@
   margin-top: 40px;
 
   p {
-    margin: 11px 0 0 0;
+    border-top: 1px solid #333;
+    margin-top: 5px;
+    padding-top: 5px;
   }
 
   .button {
     width: 110px;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    border-radius: 25px;
     padding: 7px 15px;
     margin: 0 5px;
-    background: rgba(96, 92, 206, 1);
+    background: rgba(240, 181, 213, 0.7);
     box-shadow: 5px 5px 10px -2px rgba(128, 128, 128, 1);
     transition: all 0.5s ease-in-out;
 
@@ -80,11 +81,16 @@
 }
 
 .codingType {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
   margin: 10px 0;
+}
+
+.topper p {
+  border-top: none;
 }
 
 .buttonContainer {

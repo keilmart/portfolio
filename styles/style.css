@@ -269,22 +269,28 @@ html {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: gray;
-  font-size: 1.15rem;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
   line-height: 1.6;
   text-align: start;
 }
 
 @media (max-width: 800px) {
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
 h2 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 4.2rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-shadow: -6px 6px 0px rgba(240, 181, 213, 0.7), -12px 12px 0px rgba(198, 194, 216, 0.7);
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -webkit-text-stroke: 0.8px black;
   margin: 0;
 }
 
@@ -296,8 +302,8 @@ h2 {
 }
 
 h3 {
-  font-family: "Quicksand";
-  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0;
@@ -312,8 +318,10 @@ h3 {
 }
 
 h4 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 2.7rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -357,10 +365,9 @@ header {
 }
 
 h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 20rem;
   letter-spacing: 10px;
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -372,7 +379,7 @@ h1 {
 }
 
 .logoBoxHeader {
-  width: 530px;
+  width: 630px;
   height: 340px;
   position: absolute;
   margin: 0 auto;
@@ -387,7 +394,8 @@ h1 {
 
 .logo1 {
   position: absolute;
-  color: black;
+  color: white;
+  -webkit-text-stroke: 1.5px black;
   z-index: 3;
 }
 
@@ -395,14 +403,14 @@ h1 {
   position: absolute;
   color: #605cce;
   z-index: 2;
-  left: 10px;
-  top: -10px;
+  left: 8px;
+  top: -8px;
 }
 
 @media (max-width: 850px) {
   .logo2 {
-    left: 6px;
-    top: -6px;
+    left: 4px;
+    top: -4px;
   }
 }
 
@@ -424,7 +432,6 @@ h1 {
 .logoDesc {
   width: 140px;
   position: absolute;
-  margin: -10px auto;
 }
 
 @media (max-width: 850px) {
@@ -443,19 +450,6 @@ h1 {
 
 .navbar {
   margin: 0 1rem;
-}
-
-.brand h2 {
-  font-family: "Londrina Outline", cursive;
-  font-size: 4.2rem;
-  text-transform: uppercase;
-  color: black;
-}
-
-@media (max-width: 550px) {
-  .brand h2 {
-    font-size: 2.7rem;
-  }
 }
 
 .menu {
@@ -507,7 +501,7 @@ h1 {
 
 .about {
   background-image: url(assets/aboutContent.png);
-  min-height: 70vh;
+  min-height: 65vh;
   background-size: cover;
 }
 
@@ -519,7 +513,7 @@ h1 {
 
 .aboutContainer {
   width: 100%;
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 @media (max-width: 1300px) {
@@ -540,6 +534,10 @@ h1 {
 .aboutContent {
   width: 72%;
   padding-right: 40px;
+}
+
+.aboutContent h2 {
+  padding: 40px 0 24px;
 }
 
 @media (max-width: 1300px) {
@@ -605,7 +603,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  min-height: 65vh;
+  min-height: 45vh;
   background-image: -webkit-gradient(linear, left top, right top, from(turquoise), to(#967af9));
   background-image: linear-gradient(to right, turquoise, #967af9);
   z-index: 1;
@@ -632,7 +630,7 @@ h1 {
 
 .skills h2 {
   text-align: center;
-  margin: 40px 0 20px 0;
+  margin: 37px 0 20px 0;
 }
 
 @media (max-width: 900px) {
@@ -671,10 +669,10 @@ h1 {
 
 .iconContainerIcon {
   width: calc(100% / 5);
-  padding: 35px 0;
+  padding: 37px 0;
   color: white;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
 }
 
 .iconContainerIcon:hover {
@@ -699,7 +697,7 @@ h1 {
 .iconContainer p {
   width: 100%;
   text-align: center;
-  margin: 15px 0;
+  margin: 2px 0;
   color: rgba(0, 0, 0, 0.65);
 }
 
@@ -711,21 +709,21 @@ h1 {
 }
 
 .iconContainer .iconContainerIcon {
-  font-size: 4rem;
+  font-size: 3.3rem;
   text-align: center;
 }
 
 @media (max-width: 900px) {
   .iconContainer .iconContainerIcon {
     padding: 0;
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
 @media (max-width: 525px) {
   .iconContainer .iconContainerIcon {
     padding: 5px 0 18px 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -785,21 +783,22 @@ h1 {
 }
 
 .projectDesc p {
-  margin: 11px 0 0 0;
+  border-top: 1px solid #333;
+  margin-top: 5px;
+  padding-top: 5px;
 }
 
 .projectDesc .button {
   width: 110px;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  border-radius: 25px;
   padding: 7px 15px;
   margin: 0 5px;
-  background: #605cce;
+  background: rgba(240, 181, 213, 0.7);
   -webkit-box-shadow: 5px 5px 10px -2px gray;
           box-shadow: 5px 5px 10px -2px gray;
   -webkit-transition: all 0.5s ease-in-out;
@@ -827,11 +826,16 @@ h1 {
 }
 
 .codingType {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   color: black;
   margin: 10px 0;
+}
+
+.topper p {
+  border-top: none;
 }
 
 .buttonContainer {
@@ -867,7 +871,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  min-height: 60vh;
+  min-height: 45vh;
   background-image: -webkit-gradient(linear, left top, right top, from(turquoise), to(#967af9));
   background-image: linear-gradient(to right, turquoise, #967af9);
   z-index: 1;
@@ -895,8 +899,8 @@ h1 {
   background-image: -webkit-gradient(linear, left top, right top, from(#967af9), to(turquoise));
   background-image: linear-gradient(to right, #967af9, turquoise);
   z-index: -1;
-  -webkit-transition: opacity .4s linear;
-  transition: opacity .4s linear;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
   opacity: 0;
 }
 
@@ -905,9 +909,10 @@ h1 {
 }
 
 .bottomBanner h2 {
-  font-size: 20rem;
+  font-size: 11.5rem;
   letter-spacing: 15px;
-  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  text-transform: lowercase;
   margin: 0;
 }
 
@@ -930,8 +935,8 @@ h1 {
 }
 
 .logoBoxBottom {
-  width: 970px;
-  height: 340px;
+  width: 725px;
+  height: 220px;
   position: absolute;
   margin: 0 auto;
 }
