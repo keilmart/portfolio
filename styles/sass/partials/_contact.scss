@@ -1,5 +1,5 @@
 .contact {
-  min-height: 70vh;
+  min-height: 50vh;
   background-image: url(assets/contactContent.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,8 +17,9 @@
   }
 
   h2 {
-    text-align: center;
-    padding: 40px 0;
+    text-align: left;
+    padding: 70px 0 55px 0;
+    margin-left: 10px;
   }
 
   p {
@@ -47,6 +48,7 @@
     list-style: none;
     color: rgba(96, 92, 206, 1);
     padding: 5px 30px;
+    font-size: 1.8rem;
 
     @media (max-width: 525px) {
       font-size: 1.5rem;

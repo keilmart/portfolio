@@ -296,7 +296,8 @@ h2 {
 
 @media (max-width: 680px) {
   h2 {
-    font-size: 2.9rem;
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 0;
   }
 }
@@ -430,7 +431,8 @@ h1 {
 }
 
 .logoDesc {
-  width: 140px;
+  width: 210px;
+  margin-left: 20px;
   position: absolute;
 }
 
@@ -501,7 +503,7 @@ h1 {
 
 .about {
   background-image: url(assets/aboutContent.png);
-  min-height: 65vh;
+  min-height: 55vh;
   background-size: cover;
 }
 
@@ -513,7 +515,7 @@ h1 {
 
 .aboutContainer {
   width: 100%;
-  padding: 70px 0;
+  padding: 30px 0;
 }
 
 @media (max-width: 1300px) {
@@ -537,7 +539,7 @@ h1 {
 }
 
 .aboutContent h2 {
-  padding: 40px 0 24px;
+  padding: 40px 0 24px 0;
 }
 
 @media (max-width: 1300px) {
@@ -635,13 +637,13 @@ h1 {
 
 @media (max-width: 900px) {
   .skills h2 {
-    margin: 30px 0 20px 0;
+    margin: 30px 0 17px 0;
   }
 }
 
 @media (max-width: 525px) {
   .skills h2 {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -653,7 +655,7 @@ h1 {
 
 @media (max-width: 525px) {
   .skills {
-    min-height: 30vh;
+    min-height: 25vh;
   }
 }
 
@@ -733,14 +735,15 @@ h1 {
 }
 
 .projects h2 {
-  text-align: center;
+  text-align: left;
   position: relative;
-  padding: 70px 0;
+  padding: 70px 0 25px 95px;
 }
 
 @media (max-width: 525px) {
   .projects h2 {
     padding: 40px 0 0 0;
+    margin-left: 45px;
   }
 }
 
@@ -763,6 +766,10 @@ h1 {
             flex-direction: column;
     padding: 0;
   }
+}
+
+.lastContainer {
+  padding: 25px 0 50px 0;
 }
 
 .projectImg {
@@ -788,10 +795,6 @@ h1 {
   padding-top: 5px;
 }
 
-.projectDesc p .topper p {
-  border-top: none;
-}
-
 .projectDesc .button {
   width: 110px;
   font-family: "Roboto", sans-serif;
@@ -802,6 +805,7 @@ h1 {
   text-align: center;
   padding: 7px 15px;
   margin: 0 5px;
+  border: 0.1px solid #333;
   background: rgba(240, 181, 213, 0.7);
   -webkit-box-shadow: 5px 5px 10px -2px gray;
           box-shadow: 5px 5px 10px -2px gray;
@@ -827,6 +831,10 @@ h1 {
     width: 100%;
     margin-top: 5px;
   }
+}
+
+.projectDesc p.topper {
+  border-top: none;
 }
 
 .codingType {
@@ -883,7 +891,7 @@ h1 {
 
 @media (max-width: 850px) {
   .bottomBanner {
-    min-height: 35vh;
+    min-height: 30vh;
   }
 }
 
@@ -922,13 +930,13 @@ h1 {
 
 @media (max-width: 1300px) {
   .bottomBanner h2 {
-    font-size: 15rem;
+    font-size: 10rem;
   }
 }
 
 @media (max-width: 850px) {
   .bottomBanner h2 {
-    font-size: 9rem;
+    font-size: 7rem;
   }
 }
 
@@ -947,22 +955,22 @@ h1 {
 
 @media (max-width: 1300px) {
   .logoBoxBottom {
-    width: 780px;
+    width: 660px;
     height: 220px;
   }
 }
 
 @media (max-width: 850px) {
   .logoBoxBottom {
-    width: 500px;
-    height: 170px;
+    width: 475px;
+    height: 140px;
   }
 }
 
 @media (max-width: 540px) {
   .logoBoxBottom {
-    width: 310px;
-    height: 80px;
+    width: 355px;
+    height: 92px;
   }
 }
 
@@ -995,7 +1003,7 @@ h1 {
 }
 
 .contact {
-  min-height: 70vh;
+  min-height: 50vh;
   background-image: url(assets/contactContent.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1018,8 +1026,9 @@ h1 {
 }
 
 .contact h2 {
-  text-align: center;
-  padding: 40px 0;
+  text-align: left;
+  padding: 70px 0 55px 0;
+  margin-left: 10px;
 }
 
 .contact p {
@@ -1048,6 +1057,7 @@ h1 {
   list-style: none;
   color: #605cce;
   padding: 5px 30px;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 525px) {
