@@ -266,6 +266,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 p {
@@ -279,7 +282,7 @@ p {
 
 @media (max-width: 800px) {
   p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -294,11 +297,23 @@ h2 {
   margin: 0;
 }
 
+@media (max-width: 900px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 680px) {
   h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 525px) {
+  h2 {
+    font-size: 1.7rem;
   }
 }
 
@@ -475,7 +490,7 @@ h1 {
   text-decoration: none;
   float: right;
   text-align: center;
-  margin: 16px 15px 0 15px;
+  margin: 6.5px 15px 0 15px;
   padding-bottom: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -483,7 +498,7 @@ h1 {
 
 .menu .contactTab {
   border: 1.5px solid #605cce;
-  padding: 14px 10px;
+  padding: 7px 10px;
   margin: 0 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -503,22 +518,22 @@ h1 {
 
 .about {
   background-image: url(assets/aboutContent.png);
-  min-height: 55vh;
+  min-height: 45vh;
   background-size: cover;
 }
 
 @media (max-width: 800px) {
   .about {
-    background: #f3f4f9;
+    background: white;
   }
 }
 
 .aboutContainer {
   width: 100%;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 800px) {
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -529,64 +544,73 @@ h1 {
 
 @media (max-width: 800px) {
   .aboutContainer {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 }
 
 .aboutContent {
-  width: 72%;
+  width: 75%;
   padding-right: 40px;
 }
 
 .aboutContent h2 {
-  padding: 40px 0 24px 0;
+  padding-bottom: 24px;
 }
 
-@media (max-width: 1300px) {
-  .aboutContent {
-    width: 100%;
+@media (max-width: 800px) {
+  .aboutContent h2 {
+    padding-top: 20px;
   }
 }
 
 @media (max-width: 680px) {
+  .aboutContent h2 {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 1300px) {
   .aboutContent {
-    padding-right: 0;
+    width: 60%;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutContent {
+    width: 100%;
+    padding: 5px 20px 20px 0;
   }
 }
 
 .profilePic {
-  width: 28%;
-  padding-top: 55px;
+  width: 25%;
   position: relative;
   z-index: 0;
 }
 
 .profilePic img {
+  z-index: 2;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-@media (max-width: 1300px) {
-  .profilePic {
-    width: 100%;
-    padding: 0 0 50px 0;
+@media (max-width: 800px) {
+  .profilePic img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
 @media (max-width: 1300px) {
   .profilePic {
-    width: 100%;
-    padding: 0 0 30px 0;
+    width: 40%;
   }
 }
 
-.picBorder {
-  width: 100%;
-  height: 100%;
-  border: 3px solid #605cce;
-  position: absolute;
-  left: 30px;
-  bottom: -30 px;
+@media (max-width: 850px) {
+  .profilePic {
+    width: 75%;
+  }
 }
 
 .aboutContent li {
@@ -594,6 +618,23 @@ h1 {
   list-style: none;
   color: #605cce;
   padding: 5px 30px;
+}
+
+.boxer {
+  display: block;
+  border: 3px solid #605cce;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  left: 30px;
+  bottom: 30px;
+  z-index: -1;
+}
+
+@media (max-width: 850px) {
+  .boxer {
+    display: none;
+  }
 }
 
 .skills {
@@ -605,7 +646,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  min-height: 45vh;
+  min-height: 35vh;
   background-image: -webkit-gradient(linear, left top, right top, from(turquoise), to(#967af9));
   background-image: linear-gradient(to right, turquoise, #967af9);
   z-index: 1;
@@ -632,12 +673,12 @@ h1 {
 
 .skills h2 {
   text-align: center;
-  margin: 37px 0 20px 0;
+  margin: 35px 0 17px 0;
 }
 
 @media (max-width: 900px) {
   .skills h2 {
-    margin: 30px 0 17px 0;
+    margin: 10px 0 22px 0;
   }
 }
 
@@ -649,13 +690,13 @@ h1 {
 
 @media (max-width: 600px) {
   .skills {
-    min-height: 40vh;
+    min-height: 25vh;
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 600px) {
   .skills {
-    min-height: 25vh;
+    min-height: 10vh;
   }
 }
 
@@ -718,14 +759,20 @@ h1 {
 @media (max-width: 900px) {
   .iconContainer .iconContainerIcon {
     padding: 0;
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .iconContainer .iconContainerIcon {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 525px) {
   .iconContainer .iconContainerIcon {
     padding: 5px 0 18px 0;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -737,13 +784,20 @@ h1 {
 .projects h2 {
   text-align: left;
   position: relative;
-  padding: 70px 0 25px 95px;
+  padding: 40px 0 0 95px;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 800px) {
   .projects h2 {
+    text-align: center;
     padding: 40px 0 0 0;
-    margin-left: 45px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 625px) {
+  .projects h2 {
+    padding-top: 30px;
   }
 }
 
@@ -751,8 +805,14 @@ h1 {
   padding-top: 40px;
 }
 
+@media (max-width: 800px) {
+  .projects img {
+    padding: 30px 0 0 0;
+  }
+}
+
 .projectContainer {
-  padding: 25px 0;
+  padding: 10px 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1027,8 +1087,14 @@ h1 {
 
 .contact h2 {
   text-align: left;
-  padding: 70px 0 55px 0;
+  padding: 40px 0 55px 0;
   margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+  .contact h2 {
+    padding: 35px 0 30px 0;
+  }
 }
 
 .contact p {

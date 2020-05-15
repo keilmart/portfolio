@@ -5,21 +5,30 @@
   h2 {
     text-align: left;
     position: relative;
-    padding: 70px 0 25px 95px;
+    padding: 40px 0 0 95px;
 
-    @media (max-width: 525px) {
+    @media (max-width: 800px) {
+      text-align: center;
       padding: 40px 0 0 0;
-      margin-left: 45px;
+      margin-left: 0px;
+    }
+
+    @media (max-width: 625px) {
+      padding-top: 30px;
     }
   }
 
   img {
     padding-top: 40px;
+
+    @media (max-width: 800px) {
+      padding: 30px 0 0 0;
+    }
   }
 }
 
 .projectContainer {
-  padding: 25px 0;
+  padding: 10px 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
